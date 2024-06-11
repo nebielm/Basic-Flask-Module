@@ -1,8 +1,1 @@
-[
-    {"id": 1, "author": "John Doe", "title": "First Post", "content": "This is my first post."},
-    {"id": 2, "author": "Jane Doe", "title": "Second Post", "content": "This is another post."},
-    {"id": 3, "author": "Johnny Doe", "title": "Third Post", "content": "Wow, This is my third post."},
-    {"id": 4, "author": "Janine Doe", "title": "Fourth Post", "content": "I cant believe it. This is my fourth post."},
-    {"id": 5, "author": "James Doe", "title": "Fifth Post", "content": "Crazy, this is my fifth post."},
-    {"id": 6, "author": "Jessica Doe", "title": "Sixth Post", "content": "This is my sixth and last post."}
-]
+[{"id": 1, "author": "John Doe", "title": "First Post", "content": "This is my first post."}, {"id": 2, "author": "Jane Doe", "title": "Second Post", "content": "This is another post."}, {"id": 3, "author": "J. Doe", "title": "Third Post", "content": "This is my third post."}, {"id": 4, "author": "Jane D.", "title": "Fourth Post", "content": "This is 4 post."}, {"id": 5, "author": "John D.", "title": "Fifth Post", "content": "This is my 5 post."}, {"id": 6, "author": "J Doe", "title": "Sixth Post", "content": "This is 6 post."}, {"id": 98, "author": "jennifer doe", "title": "seven", "content": "jennifer doe"}]
