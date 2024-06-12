@@ -11,7 +11,7 @@
     <p><a href="{{ url_for('add') }}">Add a new Blog Post</a></p>
     {% for post in posts %}
             <div class="post">
-                <form action="/update/{{post['id']}}" method="POST">
+                <form action="/update/{{post['id']}}" method="GET">
                     <input type="submit" value="Update">
                 </form>
                 <h2>{{ post["title"] }}</h2>
