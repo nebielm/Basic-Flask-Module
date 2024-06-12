@@ -10,12 +10,18 @@
     <h1>Welcome to My Flask Blog!</h1>
     <p><a href="{{ url_for('add') }}">Add a new Blog Post</a></p>
     {% for post in posts %}
-        <div class="post">
-            <h2>{{ post["title"] }}</h2>
-            <p><em>Written by ...</em></p>
-            <p>{{ post["content"] }}</p>
-        </div>
+            <div class="post">
+                <form action="/update/{{post['id']}}" method="POST">
+                    <input type="submit" value="Update">
+                </form>
+                <h2>{{ post["title"] }}</h2>
+                <p><em>Written by {{ post["author"] }}</em></p>
+                <br>
+                <p>{{ post["content"] }}</p>
+                <form action="/delete/{{post['id']}}" method="POST">
+                    <input type="submit" value="Delete Post">
+                </form>
+            </div>
     {% endfor %}
-
 </body>
 </html>
