@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    """opens homepage to our blog"""
     with open("data.json", 'r') as dataobj:
         blog_posts = json.load(dataobj)
     return render_template('index.html', posts=blog_posts)
@@ -15,6 +16,7 @@ def index():
 
 @app.route('/add', methods=['GET', 'POST'])
 def add():
+    """handles the functionality to add new blogs"""
     if request.method == 'POST':
         author = request.form.get("author")
         title = request.form.get("title")
@@ -36,6 +38,7 @@ def add():
 
 @app.route('/delete/<int:post_id>', methods=["POST"])
 def delete(post_id):
+    """handles the functionality to delete blogs"""
     with open("data.json", "r") as dataobj:
         blog_posts = json.load(dataobj)
     for post in blog_posts:
@@ -49,6 +52,7 @@ def delete(post_id):
 
 @app.route('/update/<int:post_id>', methods=['GET', 'POST'])
 def update(post_id):
+    """handles the functionality to update blogs"""
     with open("data.json", "r") as dataobj:
         blog_posts = json.load(dataobj)
     post = None
